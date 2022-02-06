@@ -1,0 +1,30 @@
+{
+    "pages":[1,2,3,4,5,6,7,8,9,10],
+    "statsDefinition":[
+    {
+      "type": "average",
+      "on": "message.length",
+      "per_filter": "month",
+      "name": "Average character length of posts per month"
+    },
+    {
+      "type": "absolute_max",
+      "on": "message.length",
+      "per_filter": "month",
+      "name": "Longest post by character length per month"
+    },
+    {
+      "type": "absolute_total",
+      "on": "message",
+      "per_filter": "weekNumber",
+      "name": "Total posts split by week number"
+    },
+    {
+      "type": "average",
+      "on": "message",
+      "per_filter": "month",
+      "groupBy": "from_id",
+      "name": "Average posts per user per month"
+    }
+  ]
+}
