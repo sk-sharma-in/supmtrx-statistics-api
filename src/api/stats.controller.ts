@@ -2,7 +2,7 @@ import { storage } from "./storage";
 import { DateTime } from "luxon";
 import axios from "axios";
 import { StatsBuilderContext } from "./stats-builder-context";
-import { Logger } from "logger";
+import { Logger } from "../logger";
 
 export class StatsController {
   /**
