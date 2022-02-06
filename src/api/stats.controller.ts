@@ -61,7 +61,7 @@ export class StatsController {
       }
     } catch (error) {
       Logger.error({ error }, "Error in registering the auth token");
-      throw  error.toString() || "Error in registering the auth token");
+      throw new Error(error.toString() || "Error in registering the auth token");
     }
   }
 
